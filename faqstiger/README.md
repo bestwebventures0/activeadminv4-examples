@@ -33,4 +33,13 @@ $ rails db:seed
 - config/initializers/active_admin.rb
 - app/javascript/active_admin_custom.js
 - lib/tasks/active_admin.rake
+- app/views/active_admin/_html_head.html.erb
 ```
+
+### How can I use ActiveAdmin v4 in my project?
+- ```$ rails action_text:install```
+- ```$ rails g active_admin:install```
+- ```$ rails db:migrate```
+- ```$ rails db:seed```
+- copy all the files doing magic listed in point 4 above
+- do NOT use node or webpacker or yarn. I haven't tested but using those might break activeadmin4 funtionality in your project.
